@@ -14,7 +14,13 @@ Now **dist/gsenha** binary will me available.
 
 ## Usage
 
-    gsenha get --folder folder --name name1 --name name2 ...
+    gsenha get --folder folder --name name1 --name name2 ... ---prefix GSENHA_
+
+This will return an export for each variable as:
+
+    export GSENHA\_NAME1\_DESCRIPTION='value1'
+    export GSENHA\_NAME2\_DESCRIPTION='value2'
+
 
 ### Need some enviroment variables:
 
