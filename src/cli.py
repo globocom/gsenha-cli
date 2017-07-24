@@ -9,7 +9,7 @@ def validate_env(*envs_name):
     for env_name in envs_name:
         if os.environ.get(env_name):
             return True    
-    click.echo("{env} not set, please export {env}".format(env=" or ".join(envs_name)))
+    click.echo("{env} not set, please export {env}".format(env=" or ".join(envs_name)), err=True)
     return False
 
 @click.group()
