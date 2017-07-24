@@ -16,11 +16,15 @@ Now **dist/gsenha** binary will me available.
 
     gsenha get --folder folder --name name1 --name name2 ... ---prefix GSENHA_
 
-This will return an export for each variable as:
+This will return an export for each variable as uppercase as follows:
 
     export GSENHA\_NAME1\_DESCRIPTION='value1'
     export GSENHA\_NAME2\_DESCRIPTION='value2'
 
+Using Bash you can export variables using:
+
+    command_output=$(gsenha get --folder folder --name name1 --name name2 ... ---prefix GSENHA_)
+    eval "$(command_output)"
 
 ### Need some enviroment variables:
 
