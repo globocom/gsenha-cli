@@ -1,2 +1,2 @@
-gsenha==0.0.7
+gsenha==0.0.9
 pyinstaller==3.4
